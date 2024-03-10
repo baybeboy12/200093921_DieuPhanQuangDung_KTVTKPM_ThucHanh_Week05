@@ -15,15 +15,17 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long maSV;
-    private String tenSV;
-    private String matkhau;
+    private String name;
+    private String password;
     //    @OneToMany(mappedBy = "student")
 //    private List<Teacher> teachers;
+
     @Override
     public String toString() {
         return "Student{" +
                 "maSV=" + maSV +
-                ", tenSV='" + tenSV + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }
